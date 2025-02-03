@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* header */
+
+
+header { 
+    background-color: #add8e6;
+    padding: 15px;
+}
+
+nav {
+    display: flex;
+    background-color: #daa520;
+    width: 75%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+
+#login {
+    text-align: end;
+}
+
+#link {
+    flex-grow: 2;
+}
+
+nav > div {
+    border: 2px dotted black;
+    padding: 2px;
+    flex-grow: 1;
+    
+}
+
+
+/* main */
+
+
+section {
+    margin: auto;
+    padding: 50px 0px;
+}
+
+.container > div {
+    border: 2px dotted black;
+}
+
+main > :nth-child(odd) {
+    background-color: #d3d3d3;
+}
+
+main > :nth-child(3) > div {
+    flex-direction: row-reverse;
+}
+
+#top {
+    background-color: #00008b;
+}
+
+
+.top.square {
+    background-color: #ee82ee;
+    width: 70%;
+    margin: auto;
+}
+
+.first {
+    background-color: #1e90ff;
+    flex-grow: 1.5;
+}
+
+.second {
+    background-color: #ffc0cb;
+    flex-grow: 1;
+}
+
+.bottom.square {
+        background-color: green;
+        flex-grow: 1;
+    }
+    
+
+/* footer */
+
+footer {
+    background-color: #23272a;
+    padding-top: 20px
+}
+
+footer > * {
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 65%;
+
+}
+
+.left {
+    background-color: #f08080;
+    flex-grow: 1;
+}
+
+.right {
+    display: flex;
+    background-color: #20b2aa;
+    flex-grow: 2;
+}
+
+.right > div {
+    flex-grow: 1;
+    border: 2px dotted white;
+}
+
+.foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #7fffd4;
+    margin-top: 25px;
+    width: 65%;
+    padding: 10px 0px;
+
+}
+
+.foot > * {
+    background-color: #ffb6c1;
+    border: 2px dotted black;
+    padding: 3px;
+}
+
+
+/* da eliminare dopo lo sviluppo */
+
+.bottom.square {
+    height: 550px;
+}
+
+.container > div {
+    height: 300px;
+}
+
+.top.square {
+    height: 200px;
+}
