@@ -27,6 +27,10 @@ a {
     width: 65%;
 }
 
+i {
+    margin: 3px;
+}
+
 /* header */
 
 
@@ -45,7 +49,7 @@ nav {
     align-items: center;
 }
 
-ul {
+header ul {
     display: flex;
     list-style-type: none;
     justify-content: space-between;
@@ -67,7 +71,6 @@ text-align: end;
 }
 
 nav > div {
-    border: 2px dotted black;
     padding: 2px;
     flex-grow: 1;
 }
@@ -115,11 +118,12 @@ section {
 }
 
 .container > div {
-    border: 2px dotted black;
 }
 
 main > :nth-child(even) {
-    background-color: #d3d3d3;
+    background-color: #f6f6f6;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 main > :nth-child(2) > div {
@@ -149,12 +153,25 @@ main p {
     line-height: 1.5;
     margin-top: 30px;
 }
+ main h2 {
+    background-image: url(img/stars.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-top: 12px;
+    height: 50px;
+    margin-bottom: 40px;
+ }
 
+main button{
+    color: white;
+    background-color: #7288da;
+}
 /* footer */
 
 footer {
     background-color: #23272a;
-    padding-top: 20px
+    padding-top: 20px;
+    color: white;
 }
 
 footer > * {
@@ -162,35 +179,60 @@ footer > * {
 }
 
 .left {
-    background-color: #f08080;
     flex-grow: 1;
+}
+
+.left h1 {
+    color: #7288da;
+}
+.left img {
+    width: 25px;
+    margin: 5px  5px 0px 0px;
 }
 
 .right {
     display: flex;
-    background-color: #20b2aa;
     flex-grow: 2;
 }
 
 .right > div {
     flex-grow: 1;
-    border: 2px dotted white;
+}
+
+
+.right span{
+    color: #7288da;
+    margin: 10px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+footer li{
+    margin: 10px;
+}
+
+footer .container {
+    border-bottom: solid 1px #7288da;
+}
+
+.foot button {
+    background-color: #7288da;
+    align-self: flex-end;
+    margin: 0px;
+    padding: 10px;
 }
 
 .foot {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #7fffd4;
     margin-top: 25px;
     width: 65%;
-    padding: 10px 0px;
-
+    padding-bottom: 10px;
 }
 
 .foot > * {
-    background-color: #ffb6c1;
-    border: 2px dotted black;
     padding: 3px;
 }
 
