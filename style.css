@@ -20,6 +20,13 @@ a {
     text-decoration: none;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 65%;
+}
+
 /* header */
 
 
@@ -86,9 +93,8 @@ header h1{
 header p {
     color: white;
     text-align: center;
-    line-height: 2;
+    line-height: 1.5;
     margin: 35px 0px 10px;
-    font-size: 19px;   
 }
 
 .top.square > button{
@@ -112,30 +118,37 @@ section {
     border: 2px dotted black;
 }
 
-main > :nth-child(odd) {
+main > :nth-child(even) {
     background-color: #d3d3d3;
 }
 
-main > :nth-child(3) > div {
+main > :nth-child(2) > div {
     flex-direction: row-reverse;
 }
 
 
 .first {
-    background-color: #1e90ff;
     flex-grow: 1.5;
 }
 
 .second {
-    background-color: #ffc0cb;
     flex-grow: 1;
 }
 
 .bottom.square {
-        background-color: green;
-        flex-grow: 1;
-    }
-    
+    text-align: center;
+    flex-grow: 1;
+}
+ main h1 { 
+    margin-top: 30px;
+    line-height: 1.5;
+    font-size: xx-large;
+}
+
+main p { 
+    line-height: 1.5;
+    margin-top: 30px;
+}
 
 /* footer */
 
@@ -146,14 +159,6 @@ footer {
 
 footer > * {
     margin: auto;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    width: 65%;
-
 }
 
 .left {
@@ -192,6 +197,3 @@ footer > * {
 
 /* da eliminare dopo lo sviluppo */
 
-.container > div {
-    height: 300px;
-}
